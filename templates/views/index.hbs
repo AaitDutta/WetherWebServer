@@ -2,22 +2,20 @@
 <html>
     <header>
         <link rel="stylesheet" href="/css/style.css">
-        <script src="/js/client.js"></script>
-
-
     </header>
     <body>
         <div class="main-content">
             {{>header}}
             <p>Use this site to get your weather!</p>
 
-            <form>
-                <input placeholder="Location">
+            <form class="mainForm"> 
+                <input placeholder="Location" class = "inp">
                 <button>Search</button>
             </form>
-            <p id="message-1"></p>
-            <p id="message-2"></p>
+            <p class="message-1"></p>
+            <p class="message-2"></p>
         </div>
         {{>footer}}
+        <script src="/js/client.js"></script>
     </body>
 </html>

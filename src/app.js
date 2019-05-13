@@ -17,6 +17,8 @@ app.use(express.static(publicDirPath))
 app.set('view engine','hbs') // -- to use the view engine -- //
 app.set('views',viewsPath)
 
+const port = process.env.PORT||3000
+
 app.get('',(req,resp)=>{
     resp.render('index',{
         title:'Weather',
@@ -92,6 +94,6 @@ app.get('*',(req,res)=>{
 
 })
 
-app.listen(3000,()=>{
-    console.log('server is running:3000')
+app.listen(port,()=>{
+    console.log('server is running:port')
 })
